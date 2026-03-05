@@ -1,0 +1,44 @@
+1st task Learned things:-
+1. How to download and install the Git in your system(Windows/linux/macos)
+2. How to configure the global configs which will be used in every project in that system.
+    git config --global user.name "Your Full Name"
+    git config --global user.email "your.email@example.com"
+    git config --global core.editor "code --wait"
+    git config --global init.defaultBranch main
+3. Key Concepts Learned about projects
+    Area     Name                     Description
+    1st Area Working Directory        Where you actually edit your files
+    2nd Area Staging Area (Index)     Prep area: what will go in the next commit
+    3rd Area Repository (.git folder) Permanent history of all commit
+4.  Creating first repository and working on it with the git.
+    1. Open your terminal and create a new project folder:
+        mkdir cloud-git-practice
+        cd cloud-git-practice
+    2. Initialize Git in this folder:
+        git init
+    You will see: Initialized empty Git repository in .../cloud-git-practice/.git/
+    3. Create your first file:
+        echo '# Cloud Git Practice' > README.md
+    4. Check the status of your repository:
+        git status
+    Git will show README.md as an 'untracked file' (shown in red).
+    5. Stage the file (add it to the staging area):
+        git add README.md
+    Run git status again — README.md is now in green under 'Changes to be committed'.
+    6. Make your first commit:
+        git commit -m "Initial commit: Add README"
+    You will see a confirmation with the commit hash.
+    7. View your commit history:
+        git log --oneline
+5.  Essential Commands Reference for the basics
+    Command             What It Does
+    git init            Create a new local repository
+    git status          Show current state of working directory & staging
+    git add <file>      Stage a specific file
+    git add .           Stage ALL changed files
+    git commit -m 'msg' Commit staged changes with a message
+    git log             Show full commit history
+    git log --oneline   Show compact commit history
+    git diff            Show unstaged changes
+    git diff --staged   Show staged changes before commit
+    git restore <file>  Discard changes in working directory
