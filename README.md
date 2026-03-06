@@ -5,3 +5,5 @@
 ## Bharat Dangi 05-03-2026
 
 Branch A was here
+
+Bump version to 1.0
