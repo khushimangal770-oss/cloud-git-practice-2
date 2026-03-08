@@ -7,3 +7,5 @@
 Branch A was here
 
 Bump version to 1.0
+##cloud storage
+cloud storage allow users to store and access data over the internet instead of local storage.
